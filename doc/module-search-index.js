@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"application.mygame"}];updateSearchResults();

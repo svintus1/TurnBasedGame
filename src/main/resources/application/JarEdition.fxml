@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JarEditionController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1050.0" layoutX="-50.0" layoutY="-30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Main%20Window/gamefon.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choiceMove" layoutX="761.0" layoutY="296.0" prefHeight="26.0" prefWidth="142.0" />
+      <Button fx:id="drawWaterButton" layoutX="761.0" layoutY="61.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" text="Набрать воду">
+         <font>
+            <Font name="Bit Cell" size="23.0" />
+         </font></Button>
+      <Button fx:id="waterRiceButton" layoutX="760.0" layoutY="121.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" text="Полить рис">
+         <font>
+            <Font name="Bit Cell" size="23.0" />
+         </font></Button>
+      <Button fx:id="buildHouseButton" layoutX="761.0" layoutY="181.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" text="Построить дом">
+         <font>
+            <Font name="Bit Cell" size="23.0" />
+         </font></Button>
+      <Button fx:id="newTerritoryButton" layoutX="760.0" layoutY="241.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="142.0" text="Сменить позицию">
+         <font>
+            <Font name="Bit Cell" size="20.0" />
+         </font></Button>
+      <Button fx:id="drawAllWaterButton" layoutX="761.0" layoutY="345.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="142.0" text="Набрать всю воду">
+         <font>
+            <Font name="Bit Cell" size="20.0" />
+         </font></Button>
+      <Button fx:id="waterAllRiceButton" layoutX="760.0" layoutY="403.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="142.0" text="Полить весь рис">
+         <font>
+            <Font name="Bit Cell" size="21.0" />
+         </font></Button>
+      <Button fx:id="allResourcesToPositionButton" layoutX="760.0" layoutY="461.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="Все ресурсы">
+         <font>
+            <Font name="Bit Cell" size="23.0" />
+         </font></Button>
+      <Button fx:id="protectPositionButton" layoutX="760.0" layoutY="522.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="142.0" text="Защитить ячейку">
+         <font>
+            <Font name="Bit Cell" size="20.0" />
+         </font></Button>
+      <ImageView fitHeight="63.0" fitWidth="136.0" layoutX="409.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Main%20Window/table2.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="113.0" layoutY="585.0" prefHeight="43.0" prefWidth="724.0" text="Информация о ячейках соотвествует формату:" textFill="WHITE">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="сellСount" alignment="CENTER" layoutX="369.0" prefHeight="43.0" prefWidth="214.0" text="15 : 20">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitScore" alignment="CENTER" contentDisplay="CENTER" layoutX="422.0" layoutY="30.0" prefHeight="19.0" prefWidth="108.0" text="10 : 12">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="11.0" />
+         </font>
+      </Label>
+      <Slider fx:id="audioSlider" layoutX="14.0" layoutY="525.0" orientation="VERTICAL" prefHeight="124.0" prefWidth="14.0" value="100.0" />
+      <ImageView fitHeight="92.0" fitWidth="91.0" layoutX="36.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Main%20Window/table.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="volumeIMG" fitHeight="38.0" fitWidth="40.0" layoutX="59.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Main%20Window/volumeYes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="392.0" fitWidth="258.0" layoutX="-16.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Main%20Window/table3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="saveAndExitButton" layoutX="42.0" layoutY="486.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="Сохранить игру" />
+      <ImageView fx:id="meteorIMG" fitHeight="46.0" fitWidth="29.0" layoutX="255.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Main%20Window/meteor.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="48.0" layoutY="219.0" prefHeight="18.0" prefWidth="186.0" text="Набрать воду (+2 В)">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="241.0" prefHeight="18.0" prefWidth="186.0" text="Полить рис (-1 В, +4 Р)">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="268.0" prefHeight="18.0" prefWidth="186.0" text="Построить дом ">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="277.0" prefHeight="18.0" prefWidth="186.0" text="(-4 В, -8 Р, -2 Ж, +1 Д)">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="300.0" prefHeight="18.0" prefWidth="186.0" text="Набрать всю воду (+1 В)">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="325.0" prefHeight="18.0" prefWidth="186.0" text="Полить весь рис ">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="336.0" prefHeight="18.0" prefWidth="186.0" text="(-2 В, +4 Р)">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="363.0" prefHeight="18.0" prefWidth="186.0" text="Защитить ячейку">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="372.0" prefHeight="18.0" prefWidth="186.0" text="(-16 В, -32 Р, -16 Ж, +З)">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="7.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textMap" layoutX="224.0" layoutY="75.0" prefHeight="500.0" prefWidth="500.0">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="10.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="textSizeMinus" layoutX="44.0" layoutY="62.0" mnemonicParsing="false" text="-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="textSizePlus" layoutX="67.0" layoutY="62.0" mnemonicParsing="false" text="+" />
+      <Button fx:id="indentMnus" layoutX="44.0" layoutY="121.0" mnemonicParsing="false" text="-">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="indentPlus" layoutX="65.0" layoutY="121.0" mnemonicParsing="false" text="+" />
+      <Label alignment="CENTER" layoutX="94.0" layoutY="607.0" prefHeight="43.0" prefWidth="762.0" text="Владелец_Нужно домов_Кол-во воды_Кол-во риса_Кол-во домов_Наличие воды_Наличие риса_Наличие защиты" textFill="WHITE">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="42.0" text="Размер текста" textFill="WHITE">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="99.0" text="Размер отступа" textFill="WHITE">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="9.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

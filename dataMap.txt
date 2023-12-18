@@ -1,0 +1,7 @@
+3
+Free_4_0_0_0_T_T_F_Rice_T_F Free_3_0_0_0_F_F_F_Grass_T_F PlayerAi_1_0_0_1_T_T_T_Rice_T_F
+Free_2_0_0_0_F_F_F_Grass_T_F Free_4_0_0_0_F_F_F_Grass_F_T Free_3_0_0_0_T_F_F_Water_T_F
+Player_1_0_0_1_T_T_T_Rice_T_F Free_2_0_0_0_F_F_F_Grass_T_F Free_5_0_0_0_T_F_F_Water_T_F
+2 0 2 100.0
+0 2 1
+21

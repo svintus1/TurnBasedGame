@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WinController">
+   <children>
+      <ImageView fitHeight="976.0" fitWidth="958.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/imagesCell/Grass00.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="342.0" fitWidth="279.0" layoutX="104.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="342.0" fitWidth="279.0" layoutX="-63.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/tree.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pudgeGif1" fitHeight="150.0" fitWidth="200.0" layoutX="778.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/pudge-walk-transparent-background-pudge.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="397.0" fitWidth="465.0" layoutX="305.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/victory_house.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pudgeGif2" fitHeight="387.0" fitWidth="417.0" layoutX="243.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/pudge-transparent.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fireGIF" fitHeight="1430.0" fitWidth="1545.0" layoutX="-220.0" layoutY="-390.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/WinBoom.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="spaceGIF" fitHeight="706.0" fitWidth="1221.0" layoutX="-90.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Win/victoryGIF.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="statisticsButton" layoutX="279.0" layoutY="508.0" mnemonicParsing="false" opacity="0.76" prefHeight="75.0" prefWidth="392.0" style="-fx-background-color: transparent;" text="Вывести статистику" textFill="WHITE">
+         <font>
+            <Font name="VCROSDMonoRUSbyD" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

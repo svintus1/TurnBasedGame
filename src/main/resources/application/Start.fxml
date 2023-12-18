@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StartController">
+   <children>
+      <ImageView fitHeight="656.0" fitWidth="965.0" layoutX="2.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Start/rabbit2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="52.0" layoutX="146.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Start/pudge2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="99.0" layoutX="607.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bunny1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="119.0" layoutX="645.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Start/pudge1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-46.0" layoutY="520.0" opacity="0.8" prefHeight="34.0" prefWidth="199.0" text="Pudge" textAlignment="CENTER" textFill="#b7a9a9">
+         <font>
+            <Font name="RussianPunk" size="33.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="550.0" opacity="0.8" prefHeight="29.0" prefWidth="199.0" text="vs." textAlignment="CENTER" textFill="#b7a9a9">
+         <font>
+            <Font name="RussianPunk" size="31.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="118.0" layoutY="578.0" opacity="0.8" prefHeight="60.0" prefWidth="218.0" text="Robo-Bunny..." textAlignment="CENTER" textFill="#b7a9a9">
+         <font>
+            <Font name="RussianPunk" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" alignment="CENTER" layoutX="657.0" layoutY="563.0" mnemonicParsing="false" opacity="0.8" prefHeight="74.0" prefWidth="278.0" style="-fx-background-color: transparent;" text="НАЧАТЬ ИГРУ" textAlignment="CENTER" textFill="#b7a9a9">
+         <font>
+            <Font name="RussianPunk" size="34.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
