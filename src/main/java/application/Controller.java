@@ -45,8 +45,8 @@ import javafx.stage.Stage;
 public class Controller {
     Image icon;
     Random random = new Random();
-    Audio audio;
-    Audio music;
+    Audio audio = new Audio();;
+    Audio music = new Audio();;
     Player player1;
     PlayerAi player2;
     GameElements map;
@@ -68,22 +68,25 @@ public class Controller {
      * сохраненная игра.
      */
     public Controller() {
-        music = new Audio();
-        audio = new Audio();
         music.playMusic("gameAudio.wav");
 
-        if (new File("Data.txt").length() == 0) {
+       if (new File("Data.txt").length() == 0 && new File("dataMap.txt").exists()
+                && new File("dataMap.txt").length() != 0) {
             initLastGame();
-        } else
+        } else if (new File("Data.txt").length() != 0) {
             initThisGame();
+        } else {
+            // Добавил этот метод уже после отправки курсовой
+            // Если до этого момента не было сохраненных игр, либо файл "dataMap.txt" просто удален,
+            // то инициализируется игра с рандомными настройками карты
+            initRandomGame();
+        }
 
-        
         audio.playMusic("/pudge/вот и за мной пришли.wav");
         CompletableFuture.delayedExecutor(3, TimeUnit.SECONDS).execute(() -> {
             audio.playMusic("материя.wav");
         });
         
-
         map.makeImage(player1);
     }
 
@@ -812,5 +815,20 @@ public class Controller {
                 });
             });
         });
+    }
+
+    /**
+     * Инициализирует игру с рандомными настройками карты
+     */
+    private void initRandomGame() {
+        waterSlider = random.nextInt(51) + 30;
+		riceSlider = random.nextInt(51) + 30;
+		ymSlider = random.nextInt(31) + 70;
+		fiendSize = random.nextInt(3) + 4;
+		map = new GameElements(fiendSize);
+		map.init(waterSlider, riceSlider);
+		player1 = new Player(map);
+		player2 = new PlayerAi(map, player1, ymSlider);
+        logger.info("Инициализирована игра с рандомными настройками карты.");
     }
 }
