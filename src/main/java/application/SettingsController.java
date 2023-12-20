@@ -77,6 +77,11 @@ public class SettingsController {
      */
     @FXML
     void initialize() {
+        // Если нет сохраненной игры, то кнопка "Загрузить прошлую игру" неактивна
+        if (noJar) {
+            lastGameButton.setDisable(!(new File("dataMap.txt").exists()
+                    && new File("dataMap.txt").length() != 0));
+        }
         // Код настройки слайдеров
         waterSlider.setMajorTickUnit(10);
         waterSlider.setSnapToTicks(true);
