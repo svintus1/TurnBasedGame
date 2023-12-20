@@ -503,9 +503,9 @@ public class Controller {
      * выполнится, то ИИ сделает свой обычный ход, определяемый методами класса
      * PlayerAi.
      */
-    private void rabbitMove() {
-        if (Integer.parseInt(player2.bestMove()[1]) <= 10 && random.nextDouble() <= 0.10
-                && player2.ym >= 50 && (map.countingСells()[0] + map.countingСells()[1]) < Math.pow(map.size, 2)) {
+   private void rabbitMove() {
+        if ((Integer.parseInt(player2.bestMove()[1]) <= 10 && random.nextDouble() <= 0.10
+                && player2.ym >= 50 || Integer.parseInt(player2.bestMove()[1]) == 0) && (map.countingСells()[0] + map.countingСells()[1]) < Math.pow(map.size, 2)) {
             jump();
         } else if (random.nextDouble() <= 0.005 && map.countingСells()[0] > 1 && player2.ym >= 70) {
             meteorFall();
