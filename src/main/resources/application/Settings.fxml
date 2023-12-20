@@ -26,14 +26,14 @@
             <Font name="TOYZ" size="25.0" />
          </font>
       </Label>
-      <Slider fx:id="waterSlider" layoutX="100.0" layoutY="170.0" prefHeight="14.0" prefWidth="333.0" />
-      <Slider fx:id="riceSlider" layoutX="101.0" layoutY="282.0" prefHeight="14.0" prefWidth="333.0" />
-      <Slider fx:id="ymSlider" layoutX="100.0" layoutY="389.0" prefHeight="14.0" prefWidth="333.0" />
       <ImageView fitHeight="393.0" fitWidth="551.0" layoutX="200.0" layoutY="184.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/bunny1.png" />
          </image>
       </ImageView>
+      <Slider fx:id="waterSlider" layoutX="100.0" layoutY="170.0" prefHeight="14.0" prefWidth="333.0" />
+      <Slider fx:id="riceSlider" layoutX="101.0" layoutY="282.0" prefHeight="14.0" prefWidth="333.0" />
+      <Slider fx:id="ymSlider" layoutX="100.0" layoutY="389.0" prefHeight="14.0" prefWidth="333.0" />
       <Label layoutX="101.0" layoutY="131.0" text="Процент ячеек с водой" textFill="WHITE">
          <font>
             <Font name="TOYZ" size="25.0" />
